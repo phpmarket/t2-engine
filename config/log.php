@@ -5,7 +5,7 @@ return [
             [
                 'class'       => Monolog\Handler\RotatingFileHandler::class,
                 'constructor' => [
-                    runtime_path() . '/logs/webman.log',
+                    runtime_path() . '/logs/t2engine.log',
                     7, //$maxFiles
                     Monolog\Logger::DEBUG,
                 ],

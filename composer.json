@@ -1,0 +1,53 @@
+{
+  "name": "phpmarket/t2-engine",
+  "type": "project",
+  "keywords": [
+    "high performance",
+    "http service"
+  ],
+  "homepage": "https://www.t2engine.cn",
+  "license": "MIT",
+  "description": "A high-performance HTTP service framework ported from webman.",
+  "authors": [
+    {
+      "name": "Tony",
+      "email": "support@t2engine.cn",
+      "homepage": "https://www.workerman.net",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "support@t2engine.cn",
+    "issues": "https://github.com/phpmarket/t2-engine/issues",
+    "forum": "https://forum.t2engine.cn/",
+    "wiki": "https://wiki.t2engine.cn/",
+    "source": "https://github.com/phpmarket/t2-engine"
+  },
+  "require": {
+    "php": ">=8.1",
+    "phpmarket/t2-framework": "^v1.0.0",
+    "monolog/monolog": "^2.0"
+  },
+  "suggest": {
+    "ext-event": "For better performance. "
+  },
+  "autoload": {
+    "psr-4": {
+      "": "./",
+      "App\\": "./app"
+    }
+  },
+  "scripts": {
+    "post-package-install": [
+      "App\\Plugin::install"
+    ],
+    "post-package-update": [
+      "App\\Plugin::install"
+    ],
+    "pre-package-uninstall": [
+      "App\\Plugin::uninstall"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

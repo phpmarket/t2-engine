@@ -1,7 +1,8 @@
 <?php
+
 return [
-    'enable'     => true,
+    'enable'     => false,
     'middleware' => [
-        // app\middleware\StaticFile::class,
+        // App\Middleware\StaticFile::class,
     ],
 ];

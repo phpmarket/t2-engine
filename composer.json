@@ -24,9 +24,11 @@
     "source": "https://github.com/phpmarket/t2-engine"
   },
   "require": {
-    "php": ">=8.1",
-    "phpmarket/t2-framework": "^v1.0.0",
-    "monolog/monolog": "^2.0"
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "phpmarket/t2-framework": "^1.0",
+    "monolog/monolog": "^1.0"
   },
   "suggest": {
     "ext-event": "For better performance. "
@@ -39,13 +41,13 @@
   },
   "scripts": {
     "post-package-install": [
-      "App\\Plugin::install"
+      "App\\Installer::install"
     ],
     "post-package-update": [
-      "App\\Plugin::install"
+      "App\\Installer::install"
     ],
     "pre-package-uninstall": [
-      "App\\Plugin::uninstall"
+      "App\\Installer::uninstall"
     ]
   },
   "minimum-stability": "dev",

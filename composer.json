@@ -37,6 +37,17 @@
       "App\\": "./app"
     }
   },
+  "scripts": {
+    "post-package-install": [
+      "App\\Installer::install"
+    ],
+    "post-package-update": [
+      "App\\Installer::install"
+    ],
+    "pre-package-uninstall": [
+      "App\\Installer::uninstall"
+    ]
+  },
   "minimum-stability": "dev",
   "prefer-stable": true
 }

@@ -24,7 +24,7 @@
     "source": "https://github.com/phpmarket/t2-engine"
   },
   "require": {
-    "php": ">=8.1",
+    "php": ">=8.3",
     "phpmarket/t2-framework": "^1.0",
     "monolog/monolog": "^1.0"
   },

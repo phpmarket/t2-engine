@@ -1,5 +1,6 @@
 <?php
 
+use App\Env;
 use App\Log;
 use App\Request;
 
@@ -8,8 +9,8 @@ global $argv;
 return [
     'T2Engine' => [
         'handler'     => T2\App::class,
-        'listen'      => 'http://0.0.0.0:8787',
-        'count'       => cpu_count() * 4,
+        'listen'      => Env::get('PROCESS.LISTEN', "http://0.0.0.0:8787"),
+        'count'       => cpu_count() * Env::get('PROCESS.COUNT', 4),
         'user'        => '',
         'group'       => '',
         'reusePort'   => false,

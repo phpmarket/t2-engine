@@ -25,8 +25,6 @@
   },
   "require": {
     "php": ">=8.1",
-    "ext-posix": "*",
-    "ext-pcntl": "*",
     "phpmarket/t2-framework": "^v1.0.0",
     "monolog/monolog": "^2.0"
   },

@@ -33,9 +33,10 @@ return [
             'monitorDir'        => array_merge([
                 app_path(),
                 config_path(),
+                web_path(),
                 base_path() . '/resource',
                 base_path() . '/.env',
-            ], glob(base_path() . '/plugin/*/app'), glob(base_path() . '/plugin/*/config'), glob(base_path() . '/plugin/*/api')),
+            ]),
             // Files with these suffixes will be monitored
             'monitorExtensions' => [
                 'php', 'html', 'htm', 'twig', 'env'

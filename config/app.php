@@ -4,7 +4,7 @@ use App\Env;
 use App\Request;
 
 return [
-    'debug'             => Env::get('APP.DEBUG', false),
+    'debug'             => Env::get('APP.DEBUG', true),
     'error_reporting'   => E_ALL,
     'default_timezone'  => Env::get('APP.DEFAULT_TIMEZONE', 'Asia/Shanghai'),
     'request_class'     => Request::class,

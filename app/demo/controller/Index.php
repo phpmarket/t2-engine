@@ -1,11 +1,11 @@
 <?php
 
-namespace app\controller;
+namespace App\demo\controller;
 
 use App\Request;
 use App\Response;
 
-class IndexController
+class Index
 {
     /**
      * @param Request $request
@@ -40,5 +40,4 @@ class IndexController
     {
         return json(['code' => 0, 'msg' => 'ok']);
     }
-
 }
